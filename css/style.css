@@ -1,0 +1,383 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f6fa;
+    color: #232526;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(251, 149, 15); /* Amarillo */
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px;
+    width: 40px;
+    margin-right: 12px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.15);
+}
+
+.navbar-logo span {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar-links li a:hover {
+    background: #fff;
+    color: #232526;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #fff;
+    padding: 60px 8vw;
+    min-height: 60vh;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 32px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #ff9800;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.15);
+    transition: background 0.2s;
+}
+
+.hero-btn:hover {
+    background: #ffc107;
+    color: #232526;
+}
+
+.hero-img img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.25);
+    border: 6px solid #ff9800;
+}
+
+/* Información personal */
+.info {
+    background: #fff;
+    padding: 48px 8vw;
+    margin-top: -40px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    border-radius: 16px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Centrar la sección Sobre mí */
+}
+
+.info h2 {
+    color: #ff9800;
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+
+.info p {
+    font-size: 1.1rem;
+}
+
+/* Proyectos */
+.proyectos {
+    padding: 48px 8vw;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.proyectos h2 {
+    color: #ff9800;
+    margin-bottom: 32px;
+    font-size: 2rem;
+    text-align: center; /* Centra el texto */
+}
+
+.proyecto {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    padding: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.proyecto img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.15);
+    border: 2px solid #ff9800;
+}
+
+.proyecto h3 {
+    margin-bottom: 10px;
+    color: #232526;
+}
+
+.proyecto p {
+    margin-bottom: 10px;
+}
+
+.proyecto a {
+    display: inline-block;
+    margin-right: 12px;
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.proyecto a:hover {
+    color: #414345;
+}
+
+/* Contacto */
+.contacto {
+    background: #fff;
+    padding: 48px 8vw;
+    max-width: 900px;
+    margin: 0 auto 48px auto;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    text-align: center;
+}
+
+.contacto h2 {
+    color: #ff9800;
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.contacto input,
+.contacto textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contacto button {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contacto button:hover {
+    background: #ffc107;
+    color: #232526;
+}
+
+.redes {
+    margin-top: 12px;
+}
+
+.redes a {
+    color: #ff9800;
+    margin-right: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.redes a:hover {
+    color: #414345;
+}
+
+/* Footer */
+footer {
+    background: rgb(251, 149, 15); /* Naranja igual al menú */
+    color: #fff;
+    text-align: center;
+    padding: 24px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 32px;
+    box-shadow: 0 -2px 8px rgba(44,62,80,0.08);
+    border-radius: 0 0 16px 16px;
+}
+
+/* Footer redes sociales */
+.footer-redes {
+    margin-top: 10px;
+}
+
+.footer-redes a {
+    color: #fff; /* Blanco para los enlaces */
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.footer-redes a i {
+    color: #fff; /* Blanco para los íconos */
+    margin-right: 6px;
+    font-size: 1.2em;
+}
+
+.footer-redes a:hover,
+.footer-redes a i:hover {
+    color: #232526;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 550px; /* Aumenta el alto del banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    overflow: hidden;
+}
+
+.banner-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 5 ; /* Puedes subir la opacidad si quieres que se vea más */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    color: #dd1e71;
+    padding: 0 2rem;
+}
+
+.banner-content h1,
+.banner-content p,
+.banner-content a.banner-btn {
+    color: #ff4602; /* Amarillo */
+}
+
+/* Si quieres que solo el texto sea amarillo y el botón mantenga su fondo: */
+.banner-content h1,
+.banner-content p {
+    color:rgb(0, 5, 3);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 4vw;
+    }
+    .hero-img {
+        margin-top: 32px;
+    }
+    .proyecto {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 1rem 1rem;
+    }
+    .navbar-links {
+        gap: 1rem;
+    }
+    .info, .proyectos, .contacto {
+        padding: 24px 2vw;
+    }
+    .proyecto img {
+        width: 80px;
+        height: 80px;
+    }
+}
